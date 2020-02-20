@@ -1,1 +1,30 @@
 // Navigation Styles here
+header{
+    //max-width:800px;
+    //width: 100%;
+    //margin: 0 auto;
+    .nav-div{
+        max-width: 800px;
+        width:100%;
+        margin: 0 auto;
+        .flex-layout(space-between,center);
+
+        h1{
+            margin: 0;
+        }//closes h1
+
+        nav{
+            .flex-layout(space-around,center);
+            a{
+                padding: 0 10%;
+            }
+        }//closes nav
+    }//closes nav-div
+    .intro-div{
+        max-width: 800px;
+        width:100%;
+        margin: 0 auto;
+        flex-direction: column;
+        .border();
+    }
+}//closes header

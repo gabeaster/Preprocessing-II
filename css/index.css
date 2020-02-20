@@ -83,9 +83,6 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -100,7 +97,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -168,6 +164,35 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+hr {
+  border: 0.5px dashed gray;
+}
+header .nav-div {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-div h1 {
+  margin: 0;
+}
+header .nav-div nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav-div nav a {
+  padding: 0 10%;
+}
+header .intro-div {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  border-bottom: 1px dashed gray;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -184,7 +209,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: red;
 }
 .home .content-section .text-content {
   width: 48%;
