@@ -150,6 +150,11 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #212529;
+  font-size: 1.5rem;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -170,7 +175,7 @@ hr {
 header .nav-div {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 3% auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,9 +187,11 @@ header .nav-div nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 45%;
 }
 header .nav-div nav a {
-  padding: 0 10%;
+  padding: 0 5%;
+  text-decoration: none;
 }
 header .intro-div {
   max-width: 800px;
