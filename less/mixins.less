@@ -1,11 +1,27 @@
 // Mixins in here
-.flex-layout(@justify:space-evenly,@align:center){
+.flex-layout(@justify,@align){
     display:flex;
     justify-content:@justify;
     align-items:@align;
 }
 
 .border(){
-    border-bottom:1px dashed gray;
+    border-bottom:2px dashed silver;
 }
 
+.btn-styles(){
+    display: block; 
+    background-color:@button-bg;
+    text-align:center;
+    //margin: 0 10px 20px;
+    width:90%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@main-bg;
+
+    &:hover{
+        background-color:@main-bg;
+        color:@button-bg;
+    }
+}

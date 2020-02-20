@@ -169,9 +169,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-hr {
-  border: 0.5px dashed gray;
-}
 header .nav-div {
   max-width: 800px;
   width: 100%;
@@ -198,7 +195,11 @@ header .intro-div {
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed silver;
+}
+header hr {
+  border: 0;
+  border-bottom: 2px dashed silver;
 }
 .footer {
   width: 100%;
@@ -256,4 +257,18 @@ header .intro-div {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  display: block;
+  background-color: #17A2B8;
+  text-align: center;
+  width: 90%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.home .content-pick .destination button:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
