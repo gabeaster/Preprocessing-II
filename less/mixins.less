@@ -1,1 +1,30 @@
 // Mixins in here
+.flex-layout(@justify,@align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.border(){
+    border-bottom:2px dashed silver;
+}
+
+.btn-styles(){
+    display: block; 
+    background-color:@button-bg;
+    text-align:center;
+    //margin: 0 10px 20px;
+    width:95%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@main-bg;
+
+    &:hover{
+        background-color:@main-bg;
+        color:@button-bg;
+    }
+}
+
+//Escapes
+@mobile: (max-width: 500px);
